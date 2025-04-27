@@ -1,5 +1,5 @@
 /* Funcoes */
-// Bloco de codigo que pode ser executado e reutilizado. Valores podem ser passados por ua funcao e a mesma retorna outro valor
+// Bloco de codigo que pode ser executado e reutilizado. Valores podem ser passados por uma funcao e a mesma retorna outro valor
 function areaQuadrado(lado) {
   return lado * lado;
 }
