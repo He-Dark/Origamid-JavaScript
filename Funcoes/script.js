@@ -26,7 +26,7 @@ function corFavorita(cor) {
   }
 }
 function mostraConsole() {
-  console.log("Oi");
+  console.log("Oi"); //
 }
 
 addEventListener("click", mostraConsole);
