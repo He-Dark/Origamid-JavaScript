@@ -31,3 +31,32 @@ while (i < 10) {
 // Retorna de 0 a 9 no console
 // O for loop é o mais comum
 // Incremento no contador não precisa ser i++ que é mesma coisa de i = i + 1, pode ser feito assim também i = i + 5, tudo depende da condição que você precisa.
+
+/* BREAK */
+// O loop irá parar caso encontre a palavra break
+var videoGames = ["Switch", "PS4", "XBox", "3DS"];
+for (let i = 0; i < videoGames.length; i++) {
+  console.log(videoGames[i]);
+  if (videoGames[i] === "PS4") {
+    break;
+  }
+}
+
+/* forEach */
+// forEach é um método que executa uma função para cada item do Array. É uma forma mais simples de utilizarmos um loop com arrays (ou array-like)
+var videoGames = ["Switch", "PS4", "XBox", "3DS"];
+videoGames.forEach(function (item) {
+  console.log(item);
+});
+// O argumento item  será atribuído dinamicamente
+// Podemos passar os seguintes parâmetros:
+// item, index e array
+
+/* Não se confunda com a sintaxe */
+var numero = 0;
+var maximo = 50;
+for (; numero < maximo; ) {
+  console.log(numero);
+  numero++;
+}
+// Não é aconselhavel escrever desse forma acima, mas funciona normalmente.
