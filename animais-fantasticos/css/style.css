@@ -33,3 +33,8 @@ body {
     flex-wrap: wrap;
     padding: 10px;
 }
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
