@@ -7,8 +7,27 @@ menu.classList; // lista de classe
 menu.classList.add("ativo");
 menu.classList.add("ativo", "mobile"); // duas classes
 menu.classList.remove("ativo");
-menu.classList.remove("ativo");
-
 menu.classList.toggle("ativo"); // adiciona/remove a classe
 menu.classList.contains("ativo"); // true ou false
 menu.classList.replace("ativo", "inativo");
+
+/* attributes */
+// Retorna uma array-like com os atributos do elemento.
+const animais = document.querySelector(".animais");
+
+animais.attributes; // retorna todos os atributos
+animais.attributes[0]; // retorna o primeiro atributo
+
+/* getAttribute e setAttribute */
+// Métodos que retornam ou definem de acordo com o atributo selecionado
+
+const img = document.querySelector("img");
+
+img.getAttribute("src"); // valor do src
+img.setAttribute("alt", "Texto Alternativo"); // muda o alt
+img.hasAttribute("id"); // true / false
+img.removeAttribute("alt"); // remove o alt
+
+img.hasAttribute(); // true / false se tem algum atributo
+// É muito comum métodos de get e set
+// Método é uma FUNÇÃO
