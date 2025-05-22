@@ -7,6 +7,8 @@ menu.classList; // lista de classe
 menu.classList.add("ativo");
 menu.classList.add("ativo", "mobile"); // duas classes
 menu.classList.remove("ativo");
+menu.classList.remove("ativo");
+
 menu.classList.toggle("ativo"); // adiciona/remove a classe
 menu.classList.contains("ativo"); // true ou false
 menu.classList.replace("ativo", "inativo");
