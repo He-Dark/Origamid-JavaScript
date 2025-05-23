@@ -13,7 +13,7 @@ menu.classList.replace("ativo", "inativo");
 
 /* attributes */
 // Retorna uma array-like com os atributos do elemento.
-const animais = document.querySelector(".animais");
+// const animais = document.querySelector(".animais");
 
 animais.attributes; // retorna todos os atributos
 animais.attributes[0]; // retorna o primeiro atributo
@@ -31,3 +31,14 @@ img.removeAttribute("alt"); // remove o alt
 img.hasAttribute(); // true / false se tem algum atributo
 // É muito comum métodos de get e set
 // Método é uma FUNÇÃO
+
+/* Read Only vs Writable */
+// Existem propriedades que não permitem a mudança de seus valores, essas são consideradas Read Only, ou seja, apenas leitura.
+const animais = document.querySelector(".animais");
+
+animais.className; // String com o nome das classes
+animais.className = "azul"; // substitui completamente a string
+animais.className += " vermelho"; // adiciona vermelho à string
+animais.attributes = 'class= "ativo"'; // não funciona, read-only
+// Lembre-se que podemos modificar o valor de uma propriedade
+// objeto.propriedade = ''
